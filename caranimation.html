@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body,html{
+        width: 100%;
+    }
+    .background{
+        width: 736px;
+        height: 414px;
+        background-color: aquamarine;
+        margin-left: 582px;
+        margin-top: 253px;
+        position: relative;
+        background-image: url(./Parallax\ Winter\ City\ Background.jpeg);
+        border-radius: 2px;  
+        animation-name: move;
+        animation-duration: 5s;
+        animation-timing-function: ease-in-out ;
+        animation-iteration-count: infinite;
+        animation-direction: reverse;
+    }
+    
+
+    img{
+        height: 124px;
+        width: 136px;
+        position: absolute;
+        transform: scaleX(-1);
+        margin-top: 304px;
+    }
+
+
+    @keyframes move{
+        from{background-position:0px;}
+        to{background-position :1000px;}
+    }
+
+</style>
+<body>
+
+    <div class="background">
+      <img src="./Mini_Cooper__1_-removebg-preview.png">
+    </div>
+    
+</body>
+</html>
